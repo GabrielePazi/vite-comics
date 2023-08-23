@@ -31,4 +31,7 @@
 </template>
 
 <style scoped>
+a:hover {
+  color: blue!important;
+}
 </style>

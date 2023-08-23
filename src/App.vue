@@ -3,20 +3,27 @@
     components: {
       TheHeader,
       TheShop,
-      TheFooter
+      TheFooter,
+      TheJumbotron,
+      TheAlbum
     }
   }
   import TheHeader from './components/TheHeader.vue';
   import TheShop from './components/TheShop.vue';
   import TheFooter from './components/TheFooter.vue';
+  import TheJumbotron from './components/TheJumbotron.vue'
+  import TheAlbum from './components/TheAlbum.vue'
 </script>
 
 <template>
   <TheHeader></TheHeader>
 
-  <main class="bg-black">
+  <TheJumbotron></TheJumbotron>
+  <main>
     <div class="container">
-      <h1 class="text-white py-5 ps-5">The content goes here</h1>
+
+      <TheAlbum></TheAlbum>
+      
     </div>
 
     <TheShop></TheShop>
@@ -26,4 +33,8 @@
 </template>
 
 <style>
+
+main {
+  background-color: rgb(28, 28, 28);
+}
 </style>
